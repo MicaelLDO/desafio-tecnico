@@ -1,0 +1,134 @@
+body{
+    width: 100%;
+    background: linear-gradient(#00597c, #18144d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form{
+    width: 300px;
+}
+input, button{
+    padding: 10px;
+    width: -webkit-fill-available;
+}
+
+label{
+    color: whitesmoke;
+}
+
+button{
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.form-field{
+    margin-bottom: 10px;
+}
+
+.clean{
+    background: transparent;
+    border: none;
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+.outline{
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.error{
+    color: red;
+    display: none;
+}
+
+.home-page {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#00597c, #18144d);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+button:active{
+    opacity: 0.8;
+}
+
+button[disabled]{
+    opacity: 0.6;
+}
+
+#list-users-button {
+    margin-top: 20px;
+}
+
+.list-users-container {
+    margin-top: 20px;
+}
+
+.user-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    color: white;
+}
+
+.user-list li {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#user-list-section {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 30px;
+    background-color: #030030;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    overflow: hidden;
+    width: -webkit-fill-available;
+}
+
+#user-list-container {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+  
+#user-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+#user-list li {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+    word-break: break-word;
+}
+
+.user-list li, #user-list li {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    border-radius: 5px;
+    word-break: break-word;
+}
+.user-info{
+    color: whitesmoke;
+}

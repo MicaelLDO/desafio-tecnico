@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/global.css">
+</head>
+<body>
+    <form>
+        <div class="form-field">
+            <div><label>Usuário</label></div>
+            <input type="email" name="email" id="email" onchange="onChangeEmail()" placeholder="Digite seu e-mail">
+            <div class="error" id="email-required-error">Email é obrigatório</div>
+            <div class="error" id="email-invalid-error">Email é inválido</div>
+        </div>
+        <div class="form-field">
+            <div><label>Senha</label></div>
+            <input type="password" name="senha" id="password" onchange="onChangePassword()" placeholder="Digite sua senha">
+            <div class="error" id="password-required-error">Senha é obrigatória</div>
+        </div>
+        <div>
+            <button type="button" class="clean" disabled="true" id="recover-password-button" onclick="recoverPassword()">Recuperar senha</button>
+        </div>
+        <div>
+            <button type="button" class="outline" disabled="true" id="login-button" onclick="login()">Entrar</button>
+        </div>
+        <div>
+            <button type="button" class="outline" id="-button" onclick="goToRegister()">Cadastrar</button>
+        </div>
+    </form>
+</body>
+
+<script src="script/script.js"></script>
+<script src="script/login/login.js"></script>
+
+</html>

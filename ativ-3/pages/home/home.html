@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Home</title>
+  <link rel="stylesheet" href="../../style/style.css" />
+
+</head>
+<body class="home-page">
+  <form>
+    <h2 style="color: white;">Bem-vindo!</h2>
+
+    <div class="form-field">
+      <div><label>Usuário Logado</label></div>
+      <div id="user-info" style="color: white;"></div>
+    </div>
+        
+      <div>
+        <button type="button" class="outline" onclick="goToChangePassword()">Alterar senha</button>
+      </div>
+
+    <div>
+      <button type="button" class="outline" id="list-users-button" onclick="getAllUsers()">Listar todos os usuários</button>
+    </div>
+    
+    <section id="user-list-section">
+      <div id="user-list-container">
+        <ul id="user-list" class="user-list" style="color: white; list-style: none; padding: 0;"></ul>
+      </div>
+    </section>  
+
+    <div>
+      <button type="button" class="clean" onclick="logout()">Sair</button>
+    </div>
+  </form>
+
+  <script src="../../script/home/home.js"></script>
+</body>
+</html>
