@@ -29,7 +29,7 @@ async function changePassword(event) {
   }
 
   try {
-    const response = await fetch("https://login-api.mxqservices.com.br/change-password", {
+    const response = await fetch("https://login-api.mxqservices.com.br/users/change-password", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
