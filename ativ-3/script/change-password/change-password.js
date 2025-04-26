@@ -1,5 +1,3 @@
-// change-password.js
-
 // Mostrar o nome do usuário
 const user = JSON.parse(localStorage.getItem("user"));
 const token = localStorage.getItem("token");
@@ -14,7 +12,7 @@ const userNameDisplay = document.getElementById("userNameDisplay");
 userNameDisplay.textContent = `Olá, ${user.name}!`;
 
 async function changePassword(event) {
-  event.preventDefault(); // impede o envio padrão do formulário
+  event.preventDefault(); // Impede o envio padrão do formulário
 
   const oldPassword = document.getElementById("oldPassword").value.trim();
   const newPassword = document.getElementById("newPassword").value.trim();
@@ -24,8 +22,14 @@ async function changePassword(event) {
     return;
   }
 
+  if (!token) {
+    alert("Token de autenticação não encontrado. Faça login novamente.");
+    window.location.href = "../../index.html";
+    return;
+  }
+
   try {
-    const response = await fetch("https://login-api.mxqservices.com.br/users/change-password", {
+    const response = await fetch("https://login-api.mxqservices.com.br/change-password", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -39,6 +43,7 @@ async function changePassword(event) {
 
     if (!response.ok) {
       const errorData = await response.json();
+      console.error("Erro da API:", errorData);
       throw new Error(errorData.message || "Erro ao alterar a senha.");
     }
 
@@ -48,13 +53,9 @@ async function changePassword(event) {
     // Limpa o formulário depois de sucesso
     document.getElementById("changePasswordForm").reset();
   } catch (error) {
-    console.error(error);
+    console.error("Erro na requisição:", error);
     alert("Erro: " + error.message);
   }
-}
-
-function goToHome() {
-  window.location.href = "../home/home.html";
 }
 
 // Conecta o submit do form à função changePassword

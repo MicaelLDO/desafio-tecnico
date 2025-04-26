@@ -1,34 +1,4 @@
-function onChangeEmail() {
-    toggleEmailErrors();
-  }
-  
-  function onChangePassword() {
-    togglePasswordErrors();
-  }
-  
-  function goToLogin() {
-    window.location.href = "../../index.html";
-  }
-  
-  function toggleEmailErrors() {
-    const email = document.getElementById("email").value;
-    const requiredError = document.getElementById("email-required-error");
-    const invalidError = document.getElementById("email-invalid-error");
-  
-    requiredError.style.display = email ? "none" : "block";
-    invalidError.style.display = validateEmail(email) ? "none" : "block";
-  }
-  
-  function togglePasswordErrors() {
-    const password = document.getElementById("password").value;
-    const passwordError = document.getElementById("password-required-error");
-    passwordError.style.display = password ? "none" : "block";
-  }
-  
-  function validateEmail(email) {
-    return /\S+@\S+\.\S+/.test(email);
-  }
-  
+
   async function register() {
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;

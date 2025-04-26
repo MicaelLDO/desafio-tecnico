@@ -65,6 +65,3 @@ function logout() {
 }
 
 
-function goToChangePassword() {
-  window.location.href = "../change-password/change-password.html";
-}

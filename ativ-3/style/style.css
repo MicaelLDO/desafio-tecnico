@@ -132,3 +132,7 @@ button[disabled]{
 .user-info{
     color: whitesmoke;
 }
+
+.userNameDisplay{
+    text-decoration-color: whitesmoke;
+}
