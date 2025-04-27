@@ -11,8 +11,8 @@ Este repositório contém três atividades desenvolvidas como parte do projeto *
 - [Decisões de Desenvolvimento](#decisões-de-desenvolvimento)
 - [Inspirações](#inspirações)
 - [Base para Comentários e Organização](#base-para-comentários-e-organização)
-- [Melhorias futuras](#melhorias-futuras)
-- [Como executar o projeto](#como-executar-o-projeto)
+- [Melhorias futuras](#-melhorias-futuras)
+- [Como executar o projeto](#%EF%B8%8F-como-executar-o-projeto)
 ---
 
 ## Atividade 1 - Calculadora Simples
@@ -173,14 +173,17 @@ Essas ferramentas foram usadas como suporte, mas todas as decisões finais e imp
 
 3. Inicie o servidor local:
     - Para a Atividade 1:
+      ```bash
         cd ativ-1
         npm start
         
     - Para a Atividade 2:
+      ```bash
         cd ativ-2
         npm start
     
     - Para a Atividade 3:
+      ```bash
         cd ativ-3
         npm start
 
