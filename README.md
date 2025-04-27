@@ -165,9 +165,9 @@ Essas ferramentas foram usadas como suporte, mas todas as decisões finais e imp
 
 1. Clone o repositório:
    ```bash
-   git clone git@github.com:MicaelLDO/pagina-login.git
-   cd pagina-login
-
+   git clone git@github.com:MicaelLDO/desafio-tecnico.git
+   cd desafio-tecnico
+   
 2. Instale as dependências:
     npm install
 
