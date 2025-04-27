@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Cadastro</title>
-  <link rel="stylesheet" href="../../style/style.css">
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+  <title>Cadastro</title> <!-- Título da página -->
+  <link rel="stylesheet" href="../../style/style.css"> <!-- Link para o arquivo de estilos CSS -->
 </head>
 <body>
+  <!-- Formulário para cadastro de um novo usuário -->
   <form>
+    <!-- Campo para o nome do usuário -->
     <div class="form-field">
-      <div><label>Nome</label></div>
-      <input type="text" name="nome" id="name" placeholder="Digite seu nome">
+      <div><label>Nome</label></div> <!-- Rótulo para o campo de nome -->
+      <input type="text" name="nome" id="name" placeholder="Digite seu nome"> <!-- Campo de entrada para o nome -->
     </div>
 
+    <!-- Campo para o e-mail do usuário -->
     <div class="form-field">
-      <div><label>E-mail</label></div>
-      <input type="email" name="email" id="email" placeholder="Digite seu e-mail" onchange="onChangeEmail()">
-      <div class="error" id="email-required-error">Email é obrigatório</div>
-      <div class="error" id="email-invalid-error">Email é inválido</div>
+      <div><label>E-mail</label></div> <!-- Rótulo para o campo de e-mail -->
+      <input type="email" name="email" id="email" placeholder="Digite seu e-mail" onchange="onChangeEmail()"> <!-- Campo de entrada para o e-mail -->
+      <div class="error" id="email-required-error">Email é obrigatório</div> <!-- Mensagem de erro para e-mail obrigatório -->
+      <div class="error" id="email-invalid-error">Email é inválido</div> <!-- Mensagem de erro para e-mail inválido -->
     </div>
 
+    <!-- Campo para a senha do usuário -->
     <div class="form-field">
-      <div><label>Senha</label></div>
-      <input type="password" name="senha" id="password" placeholder="Digite sua senha" onchange="onChangePassword()">
-      <div class="error" id="password-required-error">Senha é obrigatória</div>
+      <div><label>Senha</label></div> <!-- Rótulo para o campo de senha -->
+      <input type="password" name="senha" id="password" placeholder="Digite sua senha" onchange="onChangePassword()"> <!-- Campo de entrada para a senha -->
+      <div class="error" id="password-required-error">Senha é obrigatória</div> <!-- Mensagem de erro para senha obrigatória -->
     </div>
 
+    <!-- Botão para realizar o cadastro -->
     <div>
-      <button type="button" class="outline" onclick="register()">Cadastrar</button>
+      <button type="button" class="outline" onclick="register()">Cadastrar</button> <!-- Botão que chama a função de cadastro -->
     </div>
 
+    <!-- Botão para voltar à página de login -->
     <div>
-      <button type="button" class="clean" onclick="goToLogin()">Voltar para login</button>
+      <button type="button" class="clean" onclick="goToLogin()">Voltar para login</button> <!-- Botão que redireciona para a página de login -->
     </div>
   </form>
 
 </body>
+<!-- Inclui o script para a funcionalidade de cadastro -->
 <script src="../../script/register/register.js"></script>
+<!-- Inclui o script para validação dos campos -->
 <script src="../../script/utility/onChange.js"></script>
+<!-- Inclui o script para navegação entre páginas -->
 <script src="../../script/utility/goToPage.js"></script>
-
-
 </html>

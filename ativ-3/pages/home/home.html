@@ -1,40 +1,48 @@
+<!-- Documento HTML para a página inicial (Home) -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <title>Home</title>
-  <link rel="stylesheet" href="../../style/style.css" />
-
+  <meta charset="UTF-8" /> <!-- Define a codificação de caracteres como UTF-8 -->
+  <title>Home</title> <!-- Título da página -->
+  <link rel="stylesheet" href="../../style/style.css" /> <!-- Link para o arquivo de estilos CSS -->
 </head>
 <body class="home-page">
+  <!-- Formulário principal da página -->
   <form>
-    <h2 style="color: white;">Bem-vindo!</h2>
+    <h2 style="color: white;">Bem-vindo!</h2> <!-- Título da página -->
 
+    <!-- Exibe as informações do usuário logado -->
     <div class="form-field">
-      <div><label>Usuário Logado</label></div>
-      <div id="user-info" style="color: white;"></div>
+      <div><label>Usuário Logado</label></div> <!-- Rótulo para o usuário logado -->
+      <div id="user-info" style="color: white;"></div> <!-- Elemento onde as informações do usuário serão exibidas -->
     </div>
         
-      <div>
-        <button type="button" class="outline" onclick="goToChangePassword()">Alterar senha</button>
-      </div>
+    <!-- Botão para redirecionar à página de alteração de senha -->
+    <div>
+      <button type="button" class="outline" onclick="goToChangePassword()">Alterar senha</button>
+    </div>
 
+    <!-- Botão para listar todos os usuários -->
     <div>
       <button type="button" class="outline" id="list-users-button" onclick="getAllUsers()">Listar todos os usuários</button>
     </div>
     
+    <!-- Seção onde a lista de usuários será exibida -->
     <section id="user-list-section">
       <div id="user-list-container">
-        <ul id="user-list" class="user-list" style="color: white; list-style: none; padding: 0;"></ul>
+        <ul id="user-list" class="user-list" style="color: white; list-style: none; padding: 0;"></ul> <!-- Lista de usuários -->
       </div>
     </section>  
 
+    <!-- Botão para realizar o logout -->
     <div>
       <button type="button" class="clean" onclick="logout()">Sair</button>
     </div>
   </form>
 
+  <!-- Inclui o script para funcionalidades da página Home -->
   <script src="../../script/home/home.js"></script>
+  <!-- Inclui o script para navegação entre páginas -->
   <script src="../../script/utility/goToPage.js"></script>
 </body>
 </html>

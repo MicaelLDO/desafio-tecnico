@@ -1,57 +1,64 @@
+/* Define o estilo geral do corpo da página */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to right, #506e69, #017562);
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte padrão */
+  background: linear-gradient(to right, #506e69, #017562); /* Fundo com gradiente */
+  margin: 0; /* Remove a margem padrão */
+  padding: 0; /* Remove o padding padrão */
+  display: flex; /* Define o layout flexível */
+  align-items: center; /* Centraliza os itens verticalmente */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  min-height: 100vh; /* Altura mínima igual à altura da janela */
+  color: #333; /* Cor padrão do texto */
 }
 
+/* Define o estilo do contêiner principal */
 .container {
-  background-color: #98b9b9;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-  max-width: 500px;
-  width: 90%;
-  text-align: center;
+  background-color: #98b9b9; /* Cor de fundo do contêiner */
+  padding: 30px; /* Espaçamento interno */
+  border-radius: 16px; /* Bordas arredondadas */
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15); /* Sombra ao redor do contêiner */
+  max-width: 500px; /* Largura máxima do contêiner */
+  width: 90%; /* Largura relativa à tela */
+  text-align: center; /* Centraliza o texto */
 }
 
+/* Define o estilo do título principal */
 h1 {
-  margin-bottom: 20px;
-  color: #407779;
+  margin-bottom: 20px; /* Espaçamento inferior */
+  color: #407779; /* Cor do texto */
 }
 
+/* Define o estilo dos campos de entrada */
 input {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
-  margin-bottom: 15px;
-  box-sizing: border-box;
+  width: 100%; /* Largura total do contêiner pai */
+  padding: 12px; /* Espaçamento interno */
+  border: 1px solid #ccc; /* Borda cinza */
+  border-radius: 8px; /* Bordas arredondadas */
+  font-size: 16px; /* Tamanho da fonte */
+  margin-bottom: 15px; /* Espaçamento inferior */
+  box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura */
 }
 
+/* Define o estilo dos botões */
 button {
-  width: 100%;
-  padding: 12px;
-  background-color: #407779;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+  width: 100%; /* Largura total do contêiner pai */
+  padding: 12px; /* Espaçamento interno */
+  background-color: #407779; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Remove a borda */
+  border-radius: 8px; /* Bordas arredondadas */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+  transition: background 0.3s ease; /* Transição suave para a mudança de cor */
 }
 
+/* Define o estilo dos botões ao passar o mouse */
 button:hover {
-  background-color: #3ca6aa;
+  background-color: #3ca6aa; /* Cor de fundo ao passar o mouse */
 }
 
+/* Define o estilo da área onde o resultado será exibido */
 #resultado {
-  margin-top: 20px;
-  font-size: 18px;
+  margin-top: 20px; /* Espaçamento superior */
+  font-size: 18px; /* Tamanho da fonte */
 }

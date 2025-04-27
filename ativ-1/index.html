@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Operações Matemáticas</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+  <title>Operações Matemáticas</title> <!-- Título da página -->
+  <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo de estilos CSS -->
 </head>
 <body>
+  <!-- Contêiner principal da página -->
   <div class="container">
-    <h1>Calculadora Simples</h1>
+    <h1>Calculadora Simples</h1> <!-- Título principal da página -->
     
-    <label for="num1">Número 1:</label>
-    <input type="number" id="num1" />
+    <!-- Campo para o primeiro número -->
+    <label for="num1">Número 1:</label> <!-- Rótulo para o campo do primeiro número -->
+    <input type="number" id="num1" /> <!-- Campo de entrada para o primeiro número -->
 
-    <label for="num2">Número 2:</label>
-    <input type="number" id="num2" />
+    <!-- Campo para o segundo número -->
+    <label for="num2">Número 2:</label> <!-- Rótulo para o campo do segundo número -->
+    <input type="number" id="num2" /> <!-- Campo de entrada para o segundo número -->
 
-    <button onclick="calcular()">Calcular</button>
+    <!-- Botão para realizar os cálculos -->
+    <button onclick="calcular()">Calcular</button> <!-- Botão que chama a função de cálculo -->
+
+    <!-- Div onde os resultados das operações serão exibidos -->
     <div id="resultado">
-        <p>Operações entre <span id="valor-x">_</span> e <span id="valor-y">_</span>:</p>
-        <p>Soma: <span id="soma">_</span></p>
-        <p>Subtração: <span id="subtracao">_</span></p>
-        <p>Multiplicação: <span id="multiplicacao">_</span></p>
-        <p>Divisão: <span id="divisao">_</span></p>
+        <p>Operações entre <span id="valor-x">_</span> e <span id="valor-y">_</span>:</p> <!-- Exibe os números utilizados nas operações -->
+        <p>Soma: <span id="soma">_</span></p> <!-- Exibe o resultado da soma -->
+        <p>Subtração: <span id="subtracao">_</span></p> <!-- Exibe o resultado da subtração -->
+        <p>Multiplicação: <span id="multiplicacao">_</span></p> <!-- Exibe o resultado da multiplicação -->
+        <p>Divisão: <span id="divisao">_</span></p> <!-- Exibe o resultado da divisão -->
     </div>
   </div>
 
+  <!-- Inclui o script JavaScript para a funcionalidade -->
   <script src="script.js"></script>
 </body>
 </html>

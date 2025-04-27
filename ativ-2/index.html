@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Verificador de Palíndromo</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+  <title>Verificador de Palíndromo</title> <!-- Título da página -->
+  <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo de estilos CSS -->
 </head>
 <body>
+  <!-- Contêiner principal da página -->
   <div class="container">
-    <h1>Verificador de Palíndromo</h1>
-    <p>Digite uma palavra ou frase:</p>
+    <h1>Verificador de Palíndromo</h1> <!-- Título principal da página -->
+    <p>Digite uma palavra ou frase:</p> <!-- Instrução para o usuário -->
+
+    <!-- Campo de entrada para o usuário digitar a palavra ou frase -->
     <input type="text" id="entrada" placeholder="Ex: arara, A grama é amarga" />
+
+    <!-- Botão que chama a função de verificação -->
     <button onclick="verificar()">Verificar</button>
+
+    <!-- Div onde o resultado será exibido -->
     <div id="resultado"></div>
   </div>
 
+  <!-- Inclui o script JavaScript para a funcionalidade -->
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,138 +1,162 @@
-body{
+/* Define o estilo geral do corpo da página */
+body {
     width: 100%;
-    background: linear-gradient(#00597c, #18144d);
+    background: linear-gradient(#00597c, #18144d); /* Fundo com gradiente */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /* Altura total da janela */
 }
 
-form{
-    width: 300px;
-}
-input, button{
-    padding: 10px;
-    width: -webkit-fill-available;
+/* Define o estilo geral dos formulários */
+form {
+    width: 300px; /* Largura fixa do formulário */
 }
 
-label{
-    color: whitesmoke;
+/* Define o estilo dos campos de entrada e botões */
+input, button {
+    padding: 10px; /* Espaçamento interno */
+    width: -webkit-fill-available; /* Preenche a largura disponível */
 }
 
-button{
-    cursor: pointer;
-    margin-bottom: 10px;
+/* Define o estilo dos rótulos */
+label {
+    color: whitesmoke; /* Cor do texto dos rótulos */
 }
 
-.form-field{
-    margin-bottom: 10px;
+/* Define o estilo geral dos botões */
+button {
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+    margin-bottom: 10px; /* Espaçamento inferior */
 }
 
-.clean{
-    background: transparent;
-    border: none;
-    color: whitesmoke;
-    text-decoration: underline;
+/* Define o estilo dos campos do formulário */
+.form-field {
+    margin-bottom: 10px; /* Espaçamento inferior entre os campos */
 }
 
-.outline{
-    background: transparent;
-    color: white;
-    border: 1px solid white;
+/* Define o estilo dos botões com a classe "clean" */
+.clean {
+    background: transparent; /* Fundo transparente */
+    border: none; /* Sem borda */
+    color: whitesmoke; /* Cor do texto */
+    text-decoration: underline; /* Texto sublinhado */
 }
 
-.error{
-    color: red;
-    display: none;
+/* Define o estilo dos botões com a classe "outline" */
+.outline {
+    background: transparent; /* Fundo transparente */
+    color: white; /* Cor do texto */
+    border: 1px solid white; /* Borda branca */
 }
 
+/* Define o estilo das mensagens de erro */
+.error {
+    color: red; /* Cor do texto das mensagens de erro */
+    display: none; /* Inicialmente oculto */
+}
+
+/* Define o estilo da página inicial (Home) */
 .home-page {
     width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(#00597c, #18144d);
+    min-height: 100vh; /* Altura mínima da janela */
+    background: linear-gradient(#00597c, #18144d); /* Fundo com gradiente */
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
+    flex-direction: column; /* Layout em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui o padding no cálculo do tamanho */
 }
 
-button:active{
-    opacity: 0.8;
+/* Define o estilo dos botões ao serem clicados */
+button:active {
+    opacity: 0.8; /* Reduz a opacidade ao clicar */
 }
 
-button[disabled]{
-    opacity: 0.6;
+/* Define o estilo dos botões desabilitados */
+button[disabled] {
+    opacity: 0.6; /* Reduz a opacidade */
 }
 
+/* Define o estilo do botão para listar usuários */
 #list-users-button {
-    margin-top: 20px;
+    margin-top: 20px; /* Espaçamento superior */
 }
 
+/* Define o estilo do contêiner da lista de usuários */
 .list-users-container {
-    margin-top: 20px;
+    margin-top: 20px; /* Espaçamento superior */
 }
 
+/* Define o estilo da lista de usuários */
 .user-list {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 10px;
-    color: white;
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding */
+    margin-top: 10px; /* Espaçamento superior */
+    color: white; /* Cor do texto */
 }
 
+/* Define o estilo dos itens da lista de usuários */
 .user-list li {
-    background-color: rgba(255, 255, 255, 0.1);
-    margin-bottom: 5px;
-    padding: 8px;
-    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo semitransparente */
+    margin-bottom: 5px; /* Espaçamento inferior */
+    padding: 8px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
 }
 
+/* Define o estilo da seção da lista de usuários */
 #user-list-section {
     width: 100%;
-    max-width: 800px;
-    margin-top: 30px;
-    background-color: #030030;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    overflow: hidden;
-    width: -webkit-fill-available;
+    max-width: 800px; /* Largura máxima */
+    margin-top: 30px; /* Espaçamento superior */
+    background-color: #030030; /* Fundo escuro */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    overflow: hidden; /* Oculta o conteúdo que ultrapassa o contêiner */
+    width: -webkit-fill-available; /* Preenche a largura disponível */
 }
 
+/* Define o estilo do contêiner da lista de usuários com rolagem */
 #user-list-container {
-    max-height: 250px;
-    overflow-y: auto;
+    max-height: 250px; /* Altura máxima */
+    overflow-y: auto; /* Adiciona rolagem vertical */
 }
 
-  
+/* Define o estilo da lista de usuários com layout em grade */
 #user-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    color: white;
+    display: grid; /* Exibe os itens em grade */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Colunas responsivas */
+    gap: 10px; /* Espaçamento entre os itens */
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding */
+    margin: 0; /* Remove a margem */
+    color: white; /* Cor do texto */
 }
 
+/* Define o estilo dos itens da lista de usuários */
 #user-list li {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 8px;
-    border-radius: 5px;
-    text-align: center;
-    word-break: break-word;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo semitransparente */
+    padding: 8px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto */
+    word-break: break-word; /* Quebra palavras longas */
 }
 
+/* Define o estilo adicional para os itens da lista de usuários */
 .user-list li, #user-list li {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 8px;
-    border-radius: 5px;
-    word-break: break-word;
-}
-.user-info{
-    color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo semitransparente */
+    padding: 8px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    word-break: break-word; /* Quebra palavras longas */
 }
 
-.userNameDisplay{
-    text-decoration-color: whitesmoke;
+/* Define o estilo para informações do usuário */
+.user-info {
+    color: whitesmoke; /* Cor do texto */
+}
+
+/* Define o estilo para o nome do usuário exibido */
+.userNameDisplay {
+    text-decoration-color: whitesmoke; /* Cor da decoração do texto */
 }
