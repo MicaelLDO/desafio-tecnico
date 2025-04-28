@@ -104,7 +104,8 @@ ativ-3/
 - **HTML5, CSS3 e JavaScript** foram escolhidos por serem tecnologias amplamente utilizadas e por eu ter maior confiança e experiência nelas.
 - A simplicidade dessas tecnologias permitiu focar na lógica e na funcionalidade, sem a necessidade de frameworks mais complexos.
 - Escolhi utilizar o http-server para padronizar e rodar o server de maneira simples e fácil de ser visualizada.
--Durante o desenvolvimento, utilizei ferramentas de inteligência artificial, como o GitHub Copilot e o ChatGPT, para:
+- Optei por usar o fetch() por estar mais habituado a ele. Embora esteja estudando React, acredito que entregaria um código de menor qualidade se tentasse utilizá-lo neste momento.
+- Durante o desenvolvimento, utilizei ferramentas de inteligência artificial, como o GitHub Copilot e o ChatGPT, para:
     - Identificar possíveis erros no código.
     - Obter sugestões de melhorias.
     - Garantir boas práticas de desenvolvimento.
