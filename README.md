@@ -170,6 +170,8 @@ Essas ferramentas foram usadas como suporte, mas todas as decisões finais e imp
    cd desafio-tecnico
    
 2. Instale as dependências:
+    Use npm install dentro das pastas das atividades para instalar suas dependências:
+    ```bash
     npm install
 
 3. Inicie o servidor local:
