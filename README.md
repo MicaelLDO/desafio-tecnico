@@ -164,17 +164,22 @@ Essas ferramentas foram usadas como suporte, mas todas as decisões finais e imp
 
 ## 🛠️ Como Executar o Projeto
 
-1. Clone o repositório:
+1. Informações importantes:
+   - Entre cada atividade, use **Ctrl + Shift + R** para limpar o cache do navegador.
+    - Todas as atividades aparecerão na web em:
+        http://localhost:8080
+      
+2. Clone o repositório:
    ```bash
    git clone git@github.com:MicaelLDO/desafio-tecnico.git
    cd desafio-tecnico
    
-2. Instale as dependências:
+3. Instale as dependências:
     - Use npm install dentro das pastas das atividades para instalar suas dependências:
     ```bash
     npm install
-
-3. Inicie o servidor local:
+  
+4. Inicie o servidor local:
     - Para a Atividade 1:
       ```bash
         cd ativ-1
@@ -189,11 +194,6 @@ Essas ferramentas foram usadas como suporte, mas todas as decisões finais e imp
       ```bash
         cd ativ-3
         npm start
-
-4. Acesse no navegador:
-    - Entre cada atividade, use Ctrl + Shift + R para limpar o cache do navegador.
-    - Todas as atividades aparecerão na web em:
-        http://localhost:8080
 
 5. Informações adicionais:
     - Para parar a execução do servidor local, pressione Ctrl + C no terminal.
