@@ -8,7 +8,7 @@ Este repositório contém três atividades desenvolvidas como parte do projeto *
 - [Atividade 1 - Calculadora Simples](#atividade-1---calculadora-simples)
 - [Atividade 2 - Verificador de Palíndromo](#atividade-2---verificador-de-palíndromo)
 - [Atividade 3 - Sistema de Login e Gerenciamento de Usuários](#atividade-3---sistema-de-login-e-gerenciamento-de-usuários)
-- [Tempo em cada atividade](   )
+- [Tempo em cada atividade](#-tempo-pra-cada-atividade   )
 - [Decisões de Desenvolvimento](#decisões-de-desenvolvimento)
 - [Inspirações](#inspirações)
 - [Base para Comentários e Organização](#base-para-comentários-e-organização)
@@ -71,7 +71,7 @@ O **Sistema de Login e Gerenciamento de Usuários** é uma aplicação mais comp
 ### 🚀 Funcionalidades
 - **Login:** Autenticação de usuários com validação de campos.
 - **Cadastro:** Registro de novos usuários com validação de email e senha.
-- **Alteração de Senha:** Permite que usuários logados alterem suas senhas. Não está funcionando no momento, não consegui interagir com a Api usando POST e nem PUT.
+- **Alteração de Senha:** Funcionalidade planejada para permitir que usuários logados alterem suas senhas. No momento, ainda não está funcionando, pois enfrentei dificuldades ao tentar interagir com a API utilizando os métodos POST e PUT.
 - **Listagem de Usuários:** Exibe uma lista de todos os usuários cadastrados.
 
 
@@ -99,9 +99,9 @@ ativ-3/
 
 ---
 
-### Tempo pra cada atividade
-- **Atividade 1 e 2** foram rapidas de serem feitas, foi a primeira foi o tempo de realizar o css/html que demorou mais, levei em torno de uns 40 minutos. Para a segunda atividade demorei mais, principalmente pra chegar na lógica de verificação de palíndromo, o processo inteiro durou cerca de 2 horas.
-- Na **Atividade 3** dediquei a Maior parte do tempo que conseguiar codar para resolver, formatar, padronizar e deixar o código limpo. As funções de cadastro e listar usuários não tive tanto problema e resolvi relativamente rápido, mas as outras já foram mais demoradas, esqueci alguns passos, e deu alguns erros. Passei alguns dias pensando na função de troca de senha e não consegui chegar no resultado. Ao todo passei uma semana nela, considerando que tive compromissos e não fiquei o tempo todo dedicado a ela.
+### 🕑 Tempo pra cada atividade
+- **Atividades 1 e 2** foram concluídas de forma relativamente rápida. A primeira demandou mais tempo no desenvolvimento do HTML e CSS, totalizando cerca de 40 minutos. Já a segunda exigiu mais esforço, principalmente para elaborar a lógica de verificação de palíndromo, o que levou aproximadamente 2 horas no total.
+- Na **Atividade 3**, concentrei a maior parte do tempo disponível para codificação. Foquei em estruturar, padronizar e manter o código limpo. As funcionalidades de cadastro e listagem de usuários foram implementadas sem grandes dificuldades. No entanto, outras partes exigiram mais atenção: cometi alguns esquecimentos e enfrentei erros durante o desenvolvimento. A função de troca de senha foi particularmente desafiadora. Mesmo após alguns dias de reflexão e tentativa de implementação, não consegui finalizá-la. Dediquei cerca de uma semana à atividade, considerando os compromissos paralelos que limitaram meu tempo integral de dedicação.
 
 ## Decisões de Desenvolvimento
 
