@@ -8,7 +8,7 @@ Este repositório contém três atividades desenvolvidas como parte do projeto *
 - [Atividade 1 - Calculadora Simples](#atividade-1---calculadora-simples)
 - [Atividade 2 - Verificador de Palíndromo](#atividade-2---verificador-de-palíndromo)
 - [Atividade 3 - Sistema de Login e Gerenciamento de Usuários](#atividade-3---sistema-de-login-e-gerenciamento-de-usuários)
-- [Tempo em cada atividade](#-tempo-pra-cada-atividade   )
+- [Tempo para cada atividade](#-tempo-pra-cada-atividade   )
 - [Decisões de Desenvolvimento](#decisões-de-desenvolvimento)
 - [Inspirações](#inspirações)
 - [Base para Comentários e Organização](#base-para-comentários-e-organização)
